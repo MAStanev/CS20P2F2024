@@ -14,7 +14,7 @@ Scanner userInput = new Scanner(System.in);
 		System.out.print("Please enter a width: ");
 		int width =userInput.nextInt();
 		
-		int area = length * width;
+		int area = (length + width) * 2;
 		System.out.print("The area of the rectangle is " + area);
 		
 	}
