@@ -9,7 +9,6 @@ public class Digits {
 System.out.print("Enter a two digit number: ");
 int digitnumber = Userinput.nextInt();
 
-
 int tens = digitnumber / 10;
 int ones = digitnumber % 10;
 System.out.println("In the tens place of the number " + digitnumber + " is: " + tens);
