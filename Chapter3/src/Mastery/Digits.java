@@ -12,8 +12,6 @@ public class Digits {
 System.out.print("Enter a three digit number: ");
 int digitnumber = Userinput.nextInt();
 
-
-
 int hundreds = digitnumber / 100;
 int HundredsDefiner = (digitnumber / 100 * 100);
 int DoubleDigit = digitnumber - HundredsDefiner;
