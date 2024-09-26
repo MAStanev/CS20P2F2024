@@ -45,7 +45,7 @@ public class Election
 		int AwbreyTotal = AwbreyNY + AwbreyNJ + AwbreyCON;
 		int MartinezTotal = MartinezNY + MartinezNJ + MartinezCON;
 		int ElectionTotal = AwbreyTotal + MartinezTotal;
-		
+		 
 		double AwbreyPercentage =(double) AwbreyTotal / ElectionTotal * 100;
 		double MartinezPercentage =(double) MartinezTotal / ElectionTotal * 100;
 
