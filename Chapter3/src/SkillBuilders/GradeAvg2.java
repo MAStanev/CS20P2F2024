@@ -33,8 +33,4 @@ System.out.print("Your grade average is " + average + "%");
 
 
 }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> branch 'master' of https://github.com/MAStanev/CS20P2F2024.git
