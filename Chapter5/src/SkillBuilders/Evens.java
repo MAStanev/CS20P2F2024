@@ -7,4 +7,9 @@ public class Evens {
 
 	}
 
+	int num = -1; {
+	while (num < 0); {
+		System.out.print("Hi");}
+	}
+	
 }

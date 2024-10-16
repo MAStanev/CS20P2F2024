@@ -1,3 +1,18 @@
+
+/*
+
+Program: MathTutor.java          Last Date of this Revision: October 16, 2024
+
+Purpose: Displays math problems by randomly generating two numbers, 1-10,
+ and lets the user pick an operator, and then prompts the user for an answer.
+
+Author: Misha Stanev 
+School: CHHS
+Course: Computer Programming 20
+
+*/
+
+
 package Mastery;
 
 
@@ -70,3 +85,29 @@ public class MathTutor {
 
     }
 }
+
+
+/* Screen Dump
+
+Paste the output of your code here
+ Choose the number of which operator you would like to use: 
+1. +
+2. -
+3. /
+4. *
+1
+Round to the nearest tenth if necessary
+What is: 6 + 6 =  ?12
+Correct!
+
+Choose the number of which operator you would like to use: 
+1. +
+2. -
+3. /
+4. *
+3
+Round to the nearest tenth if necessary
+What is: 12 / 3 =  ?5
+Incorrect! The answer was 4
+
+ */
