@@ -1,10 +1,10 @@
 /*
 
-Program: PrimeNumber.java          Last Date of this Revision: October 17, 2024
+Program: PrimeNumber.java          Last Date of this Revision: October 18, 2024
 
-Purpose: Application that prompts the user for a number then displays a message indicating whether the number is prime or not.
+Purpose: An application that prompts the user for a number and then displays a message indicating whether the number is prime or not.
 
-Author: Misha Stanev
+Author: Misha Stanev 
 School: CHHS
 Course: Computer Programming 20
  
@@ -45,5 +45,9 @@ Paste the output of your code here
 
 Enter a number:3
 Your number is a prime number
+ 
+
+Enter a number:8
+Your number isnt a prime number
  
  */
