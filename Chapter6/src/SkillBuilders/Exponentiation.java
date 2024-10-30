@@ -20,6 +20,6 @@ System.out.println(Base + " to the power of " + Exponent + " = " + result);
 	}
 	public static void main(String[] args) {
 powerOf();	
-powerOf();
+
 }
 }
