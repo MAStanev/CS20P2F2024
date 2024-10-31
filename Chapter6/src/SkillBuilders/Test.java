@@ -1,25 +1,8 @@
-/*
-
-Program: MetricConversion.java          Last Date of this Revision: October 31, 2024
-
-Purpose: An application that displays a menu of conversion choices and then prompts the user to choose a conversion.
-
-Author: Misha Stanev 
-School: CHHS
-Course: Computer Programming 20
- 
-
-*/
-
-
-
-
-
-package Masterys;
+package SkillBuilders;
 
 import java.util.Scanner;
 
-public class MetricConversion {
+public class Test {
     
     static void conversions() {
         Scanner userInput = new Scanner(System.in);
