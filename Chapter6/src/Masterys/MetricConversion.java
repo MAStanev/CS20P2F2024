@@ -13,8 +13,6 @@ Course: Computer Programming 20
 
 
 
-
-
 package Masterys;
 
 import java.util.Scanner;
@@ -39,46 +37,46 @@ public class MetricConversion {
             System.out.print(inches + " inches equals " + centimeters + " centimeters.");
         }
         if (conversionChoice == 2) {
-            System.out.print("How many centimeters? ");
-            double centimeters = userInput.nextDouble();
-            double inches = centimeters / 2.54;
-            System.out.print(centimeters + " centimeters equals " + inches + " inches.");
+            System.out.print("How many feet? ");
+            double Feet = userInput.nextDouble();
+            double Centimeters = Feet * 30;
+            System.out.print(Feet + " feet equals " + Centimeters + " centimeters.");
         }
         if (conversionChoice == 3) {
-            System.out.print("How many feet? ");
-            double feet = userInput.nextDouble();
-            double centimeters = feet * 30;
-            System.out.print(feet + " feet equals " + centimeters + " centimeters.");
+            System.out.print("How many yards? ");
+            double Yards = userInput.nextDouble();
+            double Meters = Yards * 0.91;
+            System.out.print(Yards + " yards equals " + Meters + " meters.");
         }
         if (conversionChoice == 4) {
             System.out.print("How many miles? ");
-            double miles = userInput.nextDouble();
-            double kilometers = miles * 1.6;
-            System.out.print(miles + " miles equals " + kilometers + " kilometers.");
+            double Miles = userInput.nextDouble();
+            double Kilometers = Miles * 1.6;
+            System.out.print(Miles + " miles equals " + Kilometers + " kilometers.");
         }
         if (conversionChoice == 5) {
             System.out.print("How many centimeters? ");
-            double centimeters = userInput.nextDouble();
-            double feet = centimeters / 30;
-            System.out.print(centimeters + " centimeters equals " + feet + " feet.");
+            double Centimeters = userInput.nextDouble();
+            double Inches = Centimeters / 2.54;
+            System.out.print(Centimeters + " centimeters equals " + Inches + " inches.");
         }
         if (conversionChoice == 6) {
             System.out.print("How many centimeters? ");
-            double centimeters = userInput.nextDouble();
-            double inches = centimeters / 2.54;
-            System.out.print(centimeters + " centimeters equals " + inches + " inches.");
+            double Centimeters = userInput.nextDouble();
+            double Feet = Centimeters / 30;
+            System.out.print(Centimeters + " centimeters equals " + Feet + " feet.");
         }
         if (conversionChoice == 7) {
             System.out.print("How many meters? ");
-            double meters = userInput.nextDouble();
-            double yards = meters / 0.91;
-            System.out.print(meters + " meters equals " + yards + " yards.");
+            double Meters = userInput.nextDouble();
+            double Yards = Meters * 1.094;
+            System.out.print(Meters + " meters equals " + Yards + " yards.");
         }
         if (conversionChoice == 8) {
             System.out.print("How many kilometers? ");
-            double kilometers = userInput.nextDouble();
-            double miles = kilometers / 1.6;
-            System.out.print(kilometers + " kilometers equals " + miles + " miles.");
+            double Kilometers = userInput.nextDouble();
+            double Miles = Kilometers / 1.6;
+            System.out.print(Kilometers + " kilometers equals " + Miles + " miles.");
         }
 
     }
@@ -87,3 +85,16 @@ public class MetricConversion {
         conversions();
     }
 }
+
+/* Screen Dump
+
+Convert:
+1. Inches to Centimeters        5. Centimeters to Inches
+2. Feet to Centimeters          6. Centimeters to Feet
+3. Yards to Meters              7. Meters to Yards
+4. Miles to Kilometers          8. Kilometers to Miles
+Enter your choice: 2
+How many feet? 4
+4.0 feet equals 120.0 centimeters.
+ 
+ */
