@@ -1,9 +1,9 @@
-package SkillBuilders;
+package Masterys;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Test {
+public class AddCoins {
 
     // Method to calculate and display the dollar amount using DecimalFormat
     public static void getDollarAmount(int pennies, int nickels, int dimes, int quarters) {

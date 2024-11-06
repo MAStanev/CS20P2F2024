@@ -4,22 +4,28 @@ import java.util.Scanner;
 
 public class Exponentiation {
 
-	public static void powerOf() {
+public static void powerOf(int Base, int Exponent) //Create power of method with two parameters
+{
+Scanner userInput = new Scanner(System.in); // Create scanner object
+		
+double result = Math.pow(Base, Exponent); // Use powerOf object
+System.out.println(Base + " to the power of " + Exponent + " = " + result); // Will output the equation and the answer
+}
 
-Scanner userInput = new Scanner(System.in);
+public static void main(String[] args) {
 		
-		
-System.out.println("Choose which number you would like to be the base: ");
+Scanner userInput = new Scanner(System.in); // Creates scanner object
+
+System.out.println("Choose which number you would like to be the base: "); // Prompt user for the base of the exponent
 int Base = userInput.nextInt();
 
-System.out.println("Choose which number you would like to be the exponent: ");
+System.out.println("Choose which number you would like to be the exponent: "); // Prompts user for exponent
 int Exponent = userInput.nextInt();
 
-double result = Math.pow(Base, Exponent);
-System.out.println(Base + " to the power of " + Exponent + " = " + result);
-	}
-	public static void main(String[] args) {
-powerOf();	
+powerOf(Base, Exponent); // Calls on powerOf method to print the equation and the answer
 
-}
+
+			}		
+		
+
 }
