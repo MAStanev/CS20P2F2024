@@ -34,7 +34,7 @@ public class AddCoins {
         System.out.print("Enter the number of quarters: ");
         int quarters = scanner.nextInt();
         
-        // Print a label and then call the getDollarAmount method to calculate the total
+        //Do a print statement then call the getDollarAmount method to calculate the total
         System.out.print("Total value: ");
         getDollarAmount(pennies, nickels, dimes, quarters);
     }
