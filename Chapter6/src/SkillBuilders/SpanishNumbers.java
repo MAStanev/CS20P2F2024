@@ -6,8 +6,8 @@ public class SpanishNumbers {
 
 	public static void Spanish() {
 
-Scanner userInput = new Scanner(System.in);
-		
+
+// Create Spanish() method to ask user which number should be looped in spanish		
 		
 System.out.println("Enter the number for which word you want to be looped");	
 System.out.println("1. Uno     6. Seis");	
@@ -16,23 +16,68 @@ System.out.println("3. Tres    8. Ocho");
 System.out.println("4. Cuatro  9. Nueve");
 System.out.println("5. Sinco   10. Diez");
 
-int spanishNumber = userInput.nextInt();
+
 
 }
 
 public static void main(String[] args) {
-	
-	Spanish();
+	Scanner userInput = new Scanner(System.in);
+	Spanish(); // Call on Spanish() method
+	System.out.print("Number: ");
+	int spanishNumber = userInput.nextInt(); // Save user input as spanishNumber
 	
 
 	
-	switch (spanishNumber) {
-    case 1: System.out.println("74-95 mph or 64-82 kt or 119-153 km/hr"); break;
-    case 2: System.out.println("96-110 mph  or 83-95 kt or 154-177 km/hr"); break;
-    case 3: System.out.println("111-130 mph or 96-113 kt or 178-209 km/hr"); break;
-    case 4: System.out.println("131-155 mph or 114-135 kt or 210-249 km/hr"); break;
-    case 5: System.out.println("greater than 155mph or 135 kt or 249 km/hr"); break;	
-	
+	switch (spanishNumber) { // Create switch statement that will output spanish number 10x depending on which number user entered
+    case 1: 
+    	for (int i =0; i<10; i++) {
+    		System.out.println("Uno");
+    	}
+    	break;
+    case 2:
+    	for (int i =0; i<10; i++) {
+		System.out.println("Dos");
+	}
+	break;
+    case 3: for (int i =0; i<10; i++) {
+		System.out.println("Tres");
+	}
+	break;
+    case 4: for (int i =0; i<10; i++) {
+		System.out.println("Cuatro");
+	}
+	break;
+    case 5: for (int i =0; i<10; i++) {
+		System.out.println("Sinco");
+	}
+	break;
+    case 6: for (int i =0; i<10; i++) {
+		System.out.println("Seis");
+	}
+	break;
+    case 7: for (int i =0; i<10; i++) {
+		System.out.println("Siete");
+	}
+	break;
+    case 8: for (int i =0; i<10; i++) {
+		System.out.println("Ocho");
+	}
+	break;
+    case 9: for (int i =0; i<10; i++) {
+		System.out.println("Nueve");
+	}
+	break;
+    case 10: for (int i =0; i<10; i++) {
+		System.out.println("Diez");
+	}
+	break;
+
+	default:
+		System.out.print(" Invalid input | Enter a number 1-10");
+
+     
+
+
 	}
 	
 }

@@ -1,3 +1,17 @@
+/*
+
+Program: PrimeNumber.java          Last Date of this Revision: November 15, 2024
+
+Purpose: Modifies the PrimeNumber application created in Chapter 5 Exercise 1 to include a method named isPrime()
+
+Author: Misha Stanev
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
+
+
 package Masterys;
 
 import java.util.Scanner;
@@ -35,3 +49,14 @@ public class PrimeNumber {
         }
     }
 }
+
+
+/* Screen Dump
+Enter a number: 49
+Your number isn't a prime number.
+
+Enter a number: 43
+Your number is a prime number.
+
+ 
+ */

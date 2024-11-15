@@ -1,3 +1,19 @@
+/*
+
+Program: AddCoins.java          Last Date of this Revision: November 15, 2024
+
+Purpose: Prompts the user for the number of pennies, nickels, dimes and quarters, and then displays their total dollar amount.
+
+Author: Misha Stanev
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
+
+
+
+
 package Masterys;
 
 import java.text.DecimalFormat;
@@ -39,3 +55,20 @@ public class AddCoins {
         getDollarAmount(pennies, nickels, dimes, quarters);
     }
 }
+
+
+/* Screen Dump
+
+Enter the number of pennies: 20
+Enter the number of nickels: 5
+Enter the number of dimes: 3
+Enter the number of quarters: 5
+Total value: $2.00
+ 
+ 
+ Enter the number of pennies: 5
+Enter the number of nickels: 7
+Enter the number of dimes: 4
+Enter the number of quarters: 23
+Total value: $6.55
+ */
