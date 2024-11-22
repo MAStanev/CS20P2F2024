@@ -6,7 +6,7 @@ public class Rectangle1of5 {
 
 	private double width, length;
 
-	public Rectangle1of5() 
+	public Rectangle1of5() // Default constructor
 	{
 		width = 1;
 
