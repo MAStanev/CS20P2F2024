@@ -4,38 +4,35 @@ import java.util.*;
 
 public class Rectangle3of5 {
 
-	private double width, length;
+	private double width, length; // Declare instance variables
 
-	public Rectangle3of5() {
-
+	public Rectangle3of5() // Default length & width
+	{ 
 		width = 1;
 
 		length = 1;
 
 	}
 
-	public Rectangle3of5(double w, double l) {
-
+	public Rectangle3of5(double w, double l) 
+	{
 		width = w;
 
 		length = l;
-
 	}
 
-	public void setWidth(double w) {
-
-		width = w;
-
+	public void setWidth(double w) 
+	{
+		width = w; // Assign "w" to width of rectangle 
 	}
 
-	public void setLength(double l) {
-
-		length = l;
-
+	public void setLength(double l) 
+	{
+		length = l; // Assign "l" to length of rectangle
 	}
 
-	public double getWidth() {
-
+	public double getWidth() 
+	{
 		return width;
 
 	}
@@ -43,24 +40,25 @@ public class Rectangle3of5 {
 	public double getLength() {
 
 		return length;
-
 	}
 
-	public boolean euquals(Object r) {
+	public boolean equals(Object r) // Method to check if two rectangles are equal
 
-		Rectangle3of5 testObj = (Rectangle3of5) r;
+	{
+		Rectangle3of5 testObj = (Rectangle3of5)r;
 
-		if (testObj.getLength()==length && testObj.getWidth()==width) {
+		// Checks if length and width of rectangles are equal
+		if(testObj.getLength() == length && testObj.getWidth() == width)
 
-			return(true);
-
+		{
+			return true; // Return true if dimensions are equal
 		}
 
-		else {
+		else
 
-			return(false);
-
-		}	
+		{
+			return false; // Return false if dimensions do not match
+		}
 
 	}
 
@@ -68,7 +66,7 @@ public class Rectangle3of5 {
 
 		String myString;
 
-		myString = "The rectangle has the length "+length+" and width "+width;
+		myString = "The rectangles length is "+ length + " and the width is "+ width; 
 
 		return myString;
 
@@ -80,27 +78,28 @@ public class Rectangle3of5 {
 
 		Scanner userinput = new Scanner (System.in);
 
+		// Create two Rectangle3of5, one for rectangle1 and one for rectangle2
 		Rectangle3of5 rectangle1 = new Rectangle3of5();
 
 		Rectangle3of5 rectangle2 = new Rectangle3of5();
 
 		System.out.print("Enter the width of the first rectangle: ");
 
-		rectangle1.setWidth(userinput.nextDouble());
+		rectangle1.setWidth(userinput.nextDouble()); // Stores the width of the first rectangle to rectangle1
 
 		System.out.print("Enter the length of the first rectangle: ");
 
-		rectangle1.setLength(userinput.nextDouble());
+		rectangle1.setLength(userinput.nextDouble()); // Stores the length of the first rectangle to rectangle1
 
 		
 
 		System.out.print("Enter the width of the second rectangle: ");
 
-		rectangle2.setWidth(userinput.nextDouble());
+		rectangle2.setWidth(userinput.nextDouble()); // Stores the width of the second rectangle to rectangle2
 
 		System.out.print("Enter the length of the second rectangle: ");
 
-		rectangle2.setLength(userinput.nextDouble());
+		rectangle2.setLength(userinput.nextDouble()); // Stores the length of the second rectangle to rectangle2
 
 		
 
@@ -118,9 +117,9 @@ public class Rectangle3of5 {
 
 		
 
-		System.out.println(rectangle1);
+		System.out.println(rectangle1); // Prints length & width for rectangle 1
 
-		System.out.println(rectangle2);
+		System.out.println(rectangle2); // Prints length & width for rectangle 2
 
 	}
 
