@@ -3,8 +3,7 @@
 
 Program: MySavings.java          Last Date of this Revision: November 27, 2024
 
-Purpose: An application that uses nested for loops to output a table that displays number in 
- multiples of ten.
+Purpose: Displays a menu of choices for entering pennies, nickels, dimes and quarters into a piggy bank and then prompts the user to make a selection.
 
 Author: Misha Stanev 
 School: CHHS
