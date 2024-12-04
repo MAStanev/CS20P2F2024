@@ -1,3 +1,17 @@
+
+/*
+
+Program: DigitExtractor.java          Last Date of this Revision: December 3, 2024
+
+Purpose: An application that prompts the user for an integer and then displays the ones, tens, and hundreds digit of the number..
+
+Author: Misha Stanev 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
+
 package Masterys;
 
 import java.util.*;
@@ -70,19 +84,39 @@ public class DigitExtractor {
                 System.out.println("The whole number is: " + NUM.getNumber()); // Prints whole number
                 System.out.println("");
             } else if (one.contains(userChoice)) {
-                System.out.println("The ones place is: " + NUM.getOnes()); // Prints ones place
+                System.out.println("The number in the ones place is: " + NUM.getOnes()); // Prints ones place
                 System.out.println("");
             } else if (ten.contains(userChoice)) {
-                System.out.println("The tens place is: " + NUM.getTens()); // Prints tens place
+                System.out.println("The number in the tens place is: " + NUM.getTens()); // Prints tens place
                 System.out.println("");
             } else if (hundred.contains(userChoice)) {
-                System.out.println("The hundreds place is: " + NUM.getHundreds()); // Prints hundreds place
+                System.out.println("The number in the hundreds place is: " + NUM.getHundreds()); // Prints hundreds place
                 System.out.println("");
-            } else 
-            	System.out.println("Invalid input"); // Handles if user inputs invalid character
-
+            }
         } while (!quit.contains(userChoice)); // repeat until user chooses to quit
         
         System.out.print("End of program."); // Prints when program ends
     }
 }
+
+
+/* Screen Dump
+
+Enter a three digit number: 528
+Print (W)hole number: 
+Print (O)nes place number. 
+Print (T)ens place number. 
+Print (H)undreds place number.
+(Q)uit
+Enter your choice: h
+The number in the hundreds place is: 5
+ 
+Enter a three digit number: 528
+Print (W)hole number: 
+Print (O)nes place number. 
+Print (T)ens place number. 
+Print (H)undreds place number.
+(Q)uit
+Enter your choice: q
+End of program.
+ */
