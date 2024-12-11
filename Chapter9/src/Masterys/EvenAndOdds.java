@@ -28,34 +28,36 @@ public class EvenAndOdds {
 			EvenAndNum[i] = (int) (100 * Math.random() + 0); // Generates random number between 0 and 100
 		}
 		
-		for (int i = 0; i<cons; i++) {
-			if ( EvenAndNum[i] % 2 ==0) {
+		for (int i = 0; i<cons; i++) { // Goes through array and counts even and odd numbers
+			if ( EvenAndNum[i] % 2 ==0) { // Checks if number is even
 				Even ++;
 			}
-			else if ( EvenAndNum[i]%2==1) {
+			else if ( EvenAndNum[i]%2==1) { // Checks if number is odd
 				Odd ++;
 			}
 		}
-		int[] even = new int[Even];
-		int[] odd = new int[Odd];
+		int[] even = new int[Even]; // Create array for even numbers
+		int[] odd = new int[Odd]; // Create array for odd numbers
 		
 		int evenindex = 0;
 		int oddindex = 0;
 		for (int i =0; i<cons; i++) {
-			if (EvenAndNum[i]%2==0) {
+			if (EvenAndNum[i]%2==0) { // If the number is even, add it to the even array
 				even[evenindex] = EvenAndNum[i];
 				evenindex ++;
 			}
-			else if (EvenAndNum[i]%2==1) {
+			else if (EvenAndNum[i]%2==1) { // If number is odd, add it to the odd array
 				odd[oddindex] = EvenAndNum[i];
 				oddindex ++;
 			}
 		}
-		
+		// Outputs even numbers
 		System.out.println("Even: ");
 		for (int i = 0; i<even.length; i++) {
 			System.out.print(even[i] + " ");
 		}
+		
+		// Outputs odd numbers
 		System.out.println(" ");
 		System.out.println("Odd: ");
 		for (int i = 0; i<odd.length; i++) {
