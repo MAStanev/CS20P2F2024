@@ -18,17 +18,17 @@ package Masterys;
 public class EvenAndOdds {
 
 	public static void main(String[] args) {
-		final int cons = 25;
-		int[] EvenAndNum = new int[cons]; // Create array to store numbers
+		final int Numbers = 25;
+		int[] EvenAndNum = new int[Numbers]; // Create array to store numbers
 		
 		
 		int Even = 0; // Variable to count amount of even numbers
 		int Odd = 0; // Variable to count amount of odd numbers
-		for (int i = 0; i<cons; i++) { // Generates 25 random numbers
+		for (int i = 0; i<Numbers; i++) { // Generates 25 random numbers
 			EvenAndNum[i] = (int) (100 * Math.random() + 0); // Generates random number between 0 and 100
 		}
 		
-		for (int i = 0; i<cons; i++) { // Goes through array and counts even and odd numbers
+		for (int i = 0; i<Numbers; i++) { // Goes through array and counts even and odd numbers
 			if ( EvenAndNum[i] % 2 ==0) { // Checks if number is even
 				Even ++;
 			}
@@ -41,7 +41,7 @@ public class EvenAndOdds {
 		
 		int evenindex = 0;
 		int oddindex = 0;
-		for (int i =0; i<cons; i++) {
+		for (int i =0; i<Numbers; i++) {
 			if (EvenAndNum[i]%2==0) { // If the number is even, add it to the even array
 				even[evenindex] = EvenAndNum[i];
 				evenindex ++;
